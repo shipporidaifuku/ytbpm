@@ -1,0 +1,19 @@
+{
+  "name": "ytbpm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "YouTubeの動画で楽曲のBPMを表示するFirefox拡張機能",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/bpm.test.js test/lookup.test.js",
+    "lint": "web-ext lint",
+    "build": "web-ext build --overwrite-dest",
+    "start": "web-ext run --start-url https://www.youtube.com/"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "web-ext": "^10.8.0"
+  }
+}

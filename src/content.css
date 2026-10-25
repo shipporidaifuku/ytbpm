@@ -1,0 +1,147 @@
+.ytbpm-panel {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2147483000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 240px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(18, 18, 18, 0.92);
+  color: #f1f1f1;
+  font: 14px/1.4 "Roboto", "Noto Sans JP", sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.ytbpm-panel[hidden] {
+  display: none;
+}
+
+.ytbpm-panel[data-state="idle"] {
+  min-width: 0;
+  padding: 6px;
+}
+
+.ytbpm-section:empty {
+  display: none;
+}
+
+.ytbpm-section + .ytbpm-section:not(:empty) {
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ytbpm-heading {
+  margin-bottom: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #aaa;
+}
+
+.ytbpm-source {
+  max-width: 280px;
+  margin-top: 2px;
+  font-size: 12px;
+  color: #aaa;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ytbpm-warning {
+  margin-top: 2px;
+  font-size: 11px;
+  color: #f2c94c;
+}
+
+.ytbpm-link {
+  color: #3ea6ff;
+  text-decoration: none;
+}
+
+.ytbpm-link:hover {
+  text-decoration: underline;
+}
+
+.ytbpm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.ytbpm-btn {
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.ytbpm-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.ytbpm-btn-primary {
+  background: #cc0000;
+  font-weight: 500;
+}
+
+.ytbpm-btn-primary:hover {
+  background: #e00000;
+}
+
+.ytbpm-status {
+  margin-bottom: 6px;
+}
+
+.ytbpm-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+
+.ytbpm-bar-fill {
+  height: 100%;
+  background: #ff4e45;
+  transition: width 0.2s;
+}
+
+.ytbpm-result {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.ytbpm-value {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.ytbpm-number {
+  font-size: 28px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.ytbpm-value-sub .ytbpm-number {
+  font-size: 20px;
+  color: #bbb;
+}
+
+.ytbpm-unit,
+.ytbpm-label {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.ytbpm-error {
+  max-width: 260px;
+  color: #ffb4ab;
+}
