@@ -46,4 +46,4 @@ npm install
 
 ## ライセンス
 
-[MIT](LICENSE)
+[MPL-2.0](LICENSE)

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "YouTubeの動画で楽曲のBPMを表示するFirefox拡張機能",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "scripts": {
     "test": "node --test test/bpm.test.js test/lookup.test.js",
     "lint": "web-ext lint",
